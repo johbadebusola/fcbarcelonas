@@ -1,12 +1,15 @@
 
 import React from 'react'
-
+import './App.css';
 const playerData = ({data,loading,error}) => {
 
     const playerInfo = data.map((players) => (<div key={players.name} className="container">
-        <p className='name'>{players.name}</p>
-        <img src={players.image} />
+        <div className='container-box'>
+        <h3 className='name'>{players.name}</h3>
+        <h4 className='number'> {players.number}</h4>
+        <img className='image' src={players.image} />
         <p className='position'>{players.position}</p>
+        </div>
         <p className='info'>{players.info}</p>
         <p className='biodata'>{players.biodata}</p>
     </div>))
