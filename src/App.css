@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pattaya&display=swap');
 .App {
-  margin:1em;
+height: 100vh;
+ background-color: white;  
+ 
 }
 
+.head{
+  color:#FDC526;
+  text-align: center;
+  font-size: 5vw;
+ font-weight: bolder;
+padding-top: 1em;
+}
+
+.cont{
+  background: linear-gradient(to top right, #3B64B6, #8D183C); 
+  border-radius: 20px;
+}
 .container{
-  margin-bottom: 3em;
-  
+  margin-bottom: em;
+ 
+  padding: 10px;
+
+
+
 
 }
 
@@ -15,6 +33,7 @@
   display: flex;
 flex-direction: column;
 justify-content: center;
+
 align-items: center;
 }
 .name{
@@ -24,7 +43,7 @@ align-items: center;
  font-size: 5vw;
  bottom: 7px;
  position: absolute;
- top: 0;
+ top: 0em;
  right: -3vw;
  width: 45%;
  
@@ -49,10 +68,12 @@ align-items: center;
 .info{
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
+color: white;
 }
 
 .biodata{
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .image{
@@ -60,3 +81,13 @@ align-items: center;
   border-radius: 13px;
 }
 
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ color: white;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: bolder;
+  font-size: 6vw;
+}

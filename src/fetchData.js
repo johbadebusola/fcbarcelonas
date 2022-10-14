@@ -1,12 +1,14 @@
 
 import React, { useEffect, useState } from 'react'
 import PlayerData from './playerData'
-
+import Paginate from './Paginate'
 
 function PlayerInfo() {
 const [data,SetData] = useState([])
 const [loading,setLoading] = useState("")
 const [error,setError] = useState("")
+const [currentPage,setCurrentPage] = useState(1)
+const [postPerPage] = useState(4)
 
 async function getData() {
 
@@ -17,18 +19,22 @@ async function getData() {
     useEffect(() => {
     getData()
     .then(result => {
-       
         setLoading(true)
         SetData(result)
     })
     .catch((error) => setError("No internet connection"))
     },[])
 
+const lastPlayerInfo = currentPage * postPerPage
+const firstPlayerInfo = lastPlayerInfo - postPerPage
+const currentPost = data.slice(firstPlayerInfo,lastPlayerInfo)
 
+const paginates = (numbers) => setCurrentPage(numbers)
   return (
     <div>
        <h1>{error}</h1>
-        <PlayerData data={data} loading={loading} error={error}/>
+        <PlayerData data={currentPost} loading={loading} error={error}/>
+        <Paginate postPerPage={postPerPage} totalPost={data.length} paginates={paginates} />
     </div>
   )
 }
