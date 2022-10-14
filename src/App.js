@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import PlayerInfo from './fetchData';
+
+import NavRoutes from './routes';
 
 function App() {
   return (
     <div className="App">
-     
-     <PlayerInfo />
+     <NavRoutes />
     </div>
   );
 }
