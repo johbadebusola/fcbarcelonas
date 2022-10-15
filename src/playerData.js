@@ -1,6 +1,8 @@
 
 import React from 'react'
 import './App.css';
+
+
 const playerData = ({data,loading,error}) => {
 
     const playerInfo = data.map((players) => (<div key={players.name} className="container">

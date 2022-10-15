@@ -8,7 +8,7 @@ const [data,SetData] = useState([])
 const [loading,setLoading] = useState("")
 const [error,setError] = useState("")
 const [currentPage,setCurrentPage] = useState(1)
-const [postPerPage] = useState(4)
+const [postPerPage] = useState(3)
 
 async function getData() {
 

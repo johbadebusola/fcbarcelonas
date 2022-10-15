@@ -1,93 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pattaya&display=swap');
+
 .App {
-height: 100vh;
- background-color: white;  
- 
+  height: 100vh;
+  background-color: white;
+
 }
 
-.head{
-  color:#FDC526;
+.head {
+  color: #FDC526;
   text-align: center;
   font-size: 5vw;
- font-weight: bolder;
-padding-top: 1em;
+  font-weight: bolder;
+  padding-top: 1em;
 }
 
-.cont{
-  background: linear-gradient(to top right, #3B64B6, #8D183C); 
+.cont {
+  background: linear-gradient(to top right, #3B64B6, #8D183C);
   border-radius: 20px;
 }
-.container{
+
+.container {
   margin-bottom: em;
- 
   padding: 10px;
-
-
-
-
 }
 
-.container-box{
+.barcaLogo {
+  margin-top: 2em;
+  width: 10vw;
+  margin: 1em auto auto auto;
+  display: block;
+}
+
+.container-box {
   position: relative;
   text-align: center;
   display: flex;
-flex-direction: column;
-justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 
-align-items: center;
-}
-.name{
- position: absolute;
- color: rgb(254, 250, 250);
- font-family: 'Pattaya', sans-serif;
- font-size: 5vw;
- bottom: 7px;
- position: absolute;
- top: 0em;
- right: -3vw;
- width: 45%;
- 
+  align-items: center;
 }
 
-.number{
+.name {
   position: absolute;
- color: rgb(254, 250, 250);
- font-family: 'Pattaya', sans-serif;
- left: 0.3em;
- top: -1em;
- font-size: 20vw;
+  color: rgb(254, 250, 250);
+  font-family: 'Pattaya', sans-serif;
+  font-size: 5vw;
+  bottom: 7px;
+  position: absolute;
+  top: 0em;
+  right: -3vw;
+  width: 45%;
+
 }
-.position{
+
+.number {
+  position: absolute;
+  color: rgb(254, 250, 250);
+  font-family: 'Pattaya', sans-serif;
+  left: 0.3em;
+  top: -1em;
+  font-size: 20vw;
+}
+
+.position {
   position: absolute;
   top: 30vw;
- left: 4vw;
+  left: 4vw;
   color: white;
   font-family: 'Pattaya', sans-serif;
   font-size: 5vw;
 }
-.info{
+
+.info {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
-color: white;
+  color: white;
 }
 
-.biodata{
+.biodata {
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
-.image{
+.image {
   width: 100%;
   border-radius: 13px;
+
 }
 
-.loader{
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
- color: white;
+  color: white;
   font-family: 'Pattaya', sans-serif;
   font-weight: bolder;
   font-size: 6vw;
+}
+
+.nav {
+  background: linear-gradient(to top right, #3B64B6, #8D183C);
+  text-align: center;
+
+}
+
+.nav>ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.nav>ul>li a {
+  text-decoration: none;
+  font-family: 'Pattaya', sans-serif;
+  color: #FDC526;
+  padding: 6px;
+  display: block;
+  text-align: center;
+  border: 2px solid #7dce83;
+
+}
+
+.nav>ul>li a:hover {
+  width: 100%;
+  background-color: rgb(65, 144, 144);
+}
+
+/* PAGINATE NAV */
+.paginateNav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+}
+
+.paginateNav>ul {
+  list-style: none;
+  display: flex;
+justify-content: center;
+ align-items: center;
+  padding: 0;
+  background: linear-gradient(to top right, #3B64B6, #8D183C);
+}
+
+.paginateNav>ul>li a {
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  padding: 9px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-family: 'Pattaya', sans-serif;
+}
+
+.paginateNav>ul>li a:hover {
+  background-color: #3B64B6;
+
 }

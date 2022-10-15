@@ -6,6 +6,7 @@ import NavRoutes from './routes';
 function App() {
   return (
     <div className="App">
+    
      <NavRoutes />
      
     </div>
