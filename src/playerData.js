@@ -25,6 +25,7 @@ const playerData = ({data,loading,error}) => {
       <h2 className="head"> FC BARCELONA FIRST TEAM</h2>
     {loading ? (<h5> {playerInfo} </h5>) : (<h4 className='loader'>loading..........</h4>) }
        {error}
+       
         </div>
   )
 }

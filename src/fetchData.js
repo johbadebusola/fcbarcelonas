@@ -30,11 +30,29 @@ const firstPlayerInfo = lastPlayerInfo - postPerPage
 const currentPost = data.slice(firstPlayerInfo,lastPlayerInfo)
 
 const paginates = (numbers) => setCurrentPage(numbers)
+const prevPage = () => {
+  if (currentPage === 1){
+return
+  }
+else{
+  setCurrentPage(currentPage - 1)
+}
+}
+
+const nextPage = () => {
+  if (currentPage === 8){
+    return
+      }
+    else{
+      setCurrentPage(currentPage + 1)
+    }
+}
+
   return (
     <div>
        <h1>{error}</h1>
         <PlayerData data={currentPost} loading={loading} error={error}/>
-        <Paginate postPerPage={postPerPage} totalPost={data.length} paginates={paginates} />
+        <Paginate postPerPage={postPerPage} totalPost={data.length} paginates={paginates} prevPage={prevPage} nextPage={nextPage} />
     </div>
   )
 }

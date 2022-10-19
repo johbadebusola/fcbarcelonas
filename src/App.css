@@ -49,8 +49,8 @@
   bottom: 7px;
   position: absolute;
   top: 0em;
-  right: -3vw;
-  width: 45%;
+  right: -1vw;
+  width: 40%;
 
 }
 
@@ -81,6 +81,7 @@
 .biodata {
   font-family: 'Montserrat', sans-serif;
   color: white;
+  text-align: left;
 }
 
 .image {
@@ -159,5 +160,27 @@ justify-content: center;
 
 .paginateNav>ul>li a:hover {
   background-color: #3B64B6;
+
+}
+
+.paginateNav>ul>li a:visited{
+  background-color: #b65c3b;
+}
+
+.paginateNav>ul>li a:active{
+  background-color: yellowgreen;
+}
+
+.prevBtn{
+  color: white;
+  font-weight: bold;
+  font-family: 'Pattaya', sans-serif;
+
+}
+
+.nextBtn{
+  color: white;
+  font-weight: bold;
+  font-family: 'Pattaya', sans-serif;
 
 }
